@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'biblioteca_config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.envirion.get('DB_NAME'),
-        'USER': os.envirion.get(DB_USER),
-        'PASSWORD': os.envirion.get(DB_PASSWORD),
-        'HOST': os.envirion.get(DB_HOST), 
-        'PORT': os.envirion.get(DB_PORT),                         
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get(DB_USER),
+        'PASSWORD': os.environ.get(DB_PASSWORD),
+        'HOST': os.environ.get(DB_HOST), 
+        'PORT': os.environ.get(DB_PORT),                         
     }
 }
 
